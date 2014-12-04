@@ -3,7 +3,7 @@ my-vim
 
 打造属于自己的vim配置，用来写C，SHELL，NODE.JS，PHP，JAVASCRIPT
 
-使用方法:
+使用方法
 ======
 
 clone后，在自己的目录，解压就可以用了；所有的文件都是一一对应的
