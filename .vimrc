@@ -1,3 +1,5 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Maintainer: 
 "       Amir Salihefendic
 "       http://amix.dk - amix@amix.dk
 "
@@ -119,14 +121,14 @@ set tm=500
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
-syntax enable 
+syntax enable
 
 try
-    colorscheme desert
+    colorscheme default
 catch
 endtry
 
-set background=dark
+set background=light
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -171,8 +173,10 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "No wrap lines
 
+" 显示行号
+set number
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -277,6 +281,14 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
+" 新的一行
+imap <C-L> <ESC>o
+
+" 删除当前行
+imap <C-E> <ESC>ddi
+
+" 复制当前行
+imap <C-D> <ESC>yypi
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vimgrep searching and cope displaying
