@@ -1,10 +1,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
-"       Amir Salihefendic
+"       Orignal: Amir Salihefendic
 "       http://amix.dk - amix@amix.dk
 "
+"       Current: Hinson
+"       github: https://github.com/hinson0
+"
 " Version: 
-"       5.0 - 29/05/12 15:43:36
+"       6.0 - 20/07/15 09:23:00
 "
 " Blog_post: 
 "       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
@@ -167,6 +170,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" 1 tab == 2 space when js/html/css file
+autocmd BufNewFile,BufRead *.html,*.htm,*.css,*.js set noexpandtab tabstop=2 shiftwidth=2
+
 " Linebreak on 500 characters
 set lbr
 set tw=500
@@ -175,7 +181,7 @@ set ai "Auto indent
 set si "Smart indent
 set nowrap "No wrap lines
 
-" 显示行号
+" show number
 set number
 
 """"""""""""""""""""""""""""""
@@ -281,13 +287,13 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
-" 新的一行
+" enter a new line
 imap <C-L> <ESC>o
 
-" 删除当前行
+" delete line
 imap <C-E> <ESC>ddi
 
-" 复制当前行
+" copy line
 imap <C-D> <ESC>yypi
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
