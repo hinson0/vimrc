@@ -171,7 +171,7 @@ set shiftwidth=4
 set tabstop=4
 
 " 1 tab == 2 space when js/html/css file
-autocmd BufNewFile,BufRead *.html,*.htm,*.css,*.js set noexpandtab tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.html,*.htm,*.css,*.js set tabstop=2 shiftwidth=2
 
 " Linebreak on 500 characters
 set lbr
