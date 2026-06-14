@@ -1,9 +1,0 @@
-.claude/worktrees/
-*.local.md
-.DS_Store
-node_modules/
-*.log
-.env
-*.swp
-*.bak
-*.tmp
